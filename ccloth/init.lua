@@ -10,7 +10,7 @@
 local S = minetest.get_translator("ccloth")
 
 --Gray Hoodie
-
+--[[
 player_api.register_cloth("ccloth:gray_hoodie", {
 	description = S("Gray Hoodie"),
 	texture = "ccloth_gray_hoodie.png",
@@ -38,6 +38,7 @@ minetest.register_craft({
 	}
 })
 
+
 --Blue Jeans
 
 player_api.register_cloth("ccloth:blue_jeans", {
@@ -49,6 +50,7 @@ player_api.register_cloth("ccloth:blue_jeans", {
 	gender = "unisex",
 	groups = {cloth = 3},
 })
+]]
 
 minetest.register_craft({
 	output = "ccloth:blue_jeans",
@@ -61,7 +63,7 @@ minetest.register_craft({
 })
 
 --Black Sneakers
-
+--[[
 player_api.register_cloth("ccloth:black_sneakers", {
 	description = S("Black Sneakers"),
 	texture = "ccloth_black_sneakers.png",
@@ -71,6 +73,7 @@ player_api.register_cloth("ccloth:black_sneakers", {
 	gender = "unisex",
 	groups = {cloth = 4},
 })
+]]
 
 minetest.register_craft({
 	output = "ccloth:black_sneakers",
