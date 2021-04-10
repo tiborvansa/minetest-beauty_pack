@@ -10,8 +10,8 @@
 local S = minetest.get_translator("ccloth")
 
 --Gray Hoodie
---[[
-player_api.register_cloth("ccloth:gray_hoodie", {
+
+character_creator.register_cloth("ccloth:gray_hoodie", {
 	description = S("Gray Hoodie"),
 	texture = "ccloth_gray_hoodie.png",
 	inventory_image = "ccloth_gray_hoodie_inv.png",
@@ -22,7 +22,7 @@ player_api.register_cloth("ccloth:gray_hoodie", {
 	attach = "ccloth:gray_hoodie_hood",
 })
 
-player_api.register_cloth("ccloth:gray_hoodie_hood", {
+character_creator.register_cloth("ccloth:gray_hoodie_hood", {
 	attached = true,
 	texture = "ccloth_gray_hoodie_hood.png",
 	groups = {cloth = 1},
@@ -41,7 +41,7 @@ minetest.register_craft({
 
 --Blue Jeans
 
-player_api.register_cloth("ccloth:blue_jeans", {
+character_creator.register_cloth("ccloth:blue_jeans", {
 	description = S("Blue Jeans"),
 	texture = "ccloth_blue_jeans.png",
 	inventory_image = "ccloth_blue_jeans_inv.png",
@@ -50,7 +50,7 @@ player_api.register_cloth("ccloth:blue_jeans", {
 	gender = "unisex",
 	groups = {cloth = 3},
 })
-]]
+
 
 minetest.register_craft({
 	output = "ccloth:blue_jeans",
@@ -63,8 +63,8 @@ minetest.register_craft({
 })
 
 --Black Sneakers
---[[
-player_api.register_cloth("ccloth:black_sneakers", {
+
+character_creator.register_cloth("ccloth:black_sneakers", {
 	description = S("Black Sneakers"),
 	texture = "ccloth_black_sneakers.png",
 	inventory_image = "ccloth_black_sneakers_inv.png",
@@ -73,7 +73,7 @@ player_api.register_cloth("ccloth:black_sneakers", {
 	gender = "unisex",
 	groups = {cloth = 4},
 })
-]]
+
 
 minetest.register_craft({
 	output = "ccloth:black_sneakers",
